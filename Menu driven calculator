@@ -1,0 +1,63 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPouQXyXznVUklCdDScK9If",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/Davis_traning/blob/main/Menu%20driven%20calculator\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "    print(\"\\n1.Add 2.Subtract 3.Multiply 4.Divide 5.Exit\")\n",
+        "    ch = int(input(\"Enter choice: \"))\n",
+        "\n",
+        "    if ch == 5:\n",
+        "        break\n",
+        "\n",
+        "    a = float(input(\"Enter first number: \"))\n",
+        "    b = float(input(\"Enter second number: \"))\n",
+        "\n",
+        "    if ch == 1:\n",
+        "        print(\"Result:\", a + b)\n",
+        "    elif ch == 2:\n",
+        "        print(\"Result:\", a - b)\n",
+        "    elif ch == 3:\n",
+        "        print(\"Result:\", a * b)\n",
+        "    elif ch == 4:\n",
+        "        if b == 0:\n",
+        "            print(\"Cannot divide by zero\")\n",
+        "        else:\n",
+        "            print(\"Result:\", a / b)\n",
+        "    else:\n",
+        "        print(\"Invalid choice\")"
+      ],
+      "metadata": {
+        "id": "zqqOxgFdrizl"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
