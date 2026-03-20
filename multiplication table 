@@ -1,0 +1,49 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNC1cTrYZ5oH4N8ENzrvFSQ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/Davis_traning/blob/main/multiplication%20table%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def table(n):\n",
+        "    if n < 0:\n",
+        "        print(\"Invalid number\")\n",
+        "        return\n",
+        "    for i in range(1, 11):\n",
+        "        print(n, \"x\", i, \"=\", n*i)\n",
+        "\n",
+        "num = int(input(\"Enter number: \"))\n",
+        "table(num)"
+      ],
+      "metadata": {
+        "id": "RXe7PKC7qCDj"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
