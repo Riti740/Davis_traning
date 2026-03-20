@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyMnrtT1U++WNpqDTcSysVKK",
+      "authorship_tag": "ABX9TyP09mMkPWnOkgUd8sQpVJoz",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -29,15 +29,13 @@
     {
       "cell_type": "code",
       "source": [
-        "def palindrome(x):\n",
-        "    s = str(x)\n",
-        "    if s == s[::-1]:\n",
-        "        print(\"Palindrome\")\n",
-        "    else:\n",
-        "        print(\"Not Palindrome\")\n",
+        "rows = 5\n",
         "\n",
-        "val = input(\"Enter value: \")\n",
-        "palindrome(val)"
+        "for i in range(1, rows+1):\n",
+        "    if i % 2 == 0:\n",
+        "        print(\"* \" * i)\n",
+        "    else:\n",
+        "        print(\"# \" * i)"
       ],
       "metadata": {
         "id": "1xCbSOIXq5c3"
